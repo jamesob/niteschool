@@ -1,0 +1,16 @@
+# Site settings
+title: NITE SCHOOL
+email: niteschoolradio@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Weekly radio program playing modern blend of under-trafficked music.
+  Genre is nighttime, aural safari in the dark. 
+  Soundgarbage found in the tide around midnight.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://niteschool.co" # the base hostname & protocol for your site
+twitter_username: jamesob
+github_username:  jamesob
+
+# Build settings
+markdown: kramdown
+
+permalink: /:categories/:title/

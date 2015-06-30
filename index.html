@@ -1,152 +1,44 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>NITE SCHOOL</title>
-    <link rel="image_source" href="images/ns.png" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <style>
-      body {
-        background-color: #aaa;
-      }
+---
+layout: default
+---
 
-      #inner {
-        width: 50%;
-        margin: 0 auto;
-        font-family: monospace;
-        padding-top: 80px;
-        margin-bottom: 100px;
-      }
+<img class="center" alt="hello nite school" src="images/ns.png" />
 
-      img.center {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
+<div id="explanation">
+  Weekly radio program playing modern blend of under-trafficked music.
+  <br /><br />
 
-      #explanation, #episodes {
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 40px;
-      }
+  Genre is nighttime, aural safari in the dark. 
+  Soundgarbage found in the tide around midnight.
+  <br /><br />
 
-      #episodes {
-        margin-top: 10px;
-      }
+  Episodes are recorded live by way of technics 1200s, stanton 
+  CMP-800s, a xone mixer, and boxed wine.
+  <br /><br />
 
-      ol.episode-list {
-        list-style-type: lower-roman;
-      }
+  <br />
+  Hosted by <a href="http://soundcloud.com/jamesob">jamesob</a>.
 
-      .tracklist {
-        margin-top: 20px;
-      }
+</div>
 
-      .sep {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-    </style>
-  </head>
+<div class='sep'>
+  <!-- ║▌║█║▌│║▌║▌█ -->
+  <hr />
+ </div>
 
-  <body>
-    <div id="inner">
-      <img class="center" alt="hello nite school" src="images/ns.png" />
+ <div class='episodes'>
+   <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}&gt;</a>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <div id="explanation">
-        Weekly radio program playing modern blend of under-trafficked music.
-        <br /><br />
-
-        Genre is nighttime, aural safari in the dark. 
-        Soundgarbage found in the tide around midnight.
-        <br /><br />
-
-        Episodes are recorded live by way of technics 1200s, stanton 
-        CMP-800s, a xone mixer, and boxed wine.
-        <br /><br />
-
-        <br />
-        Hosted by <a href="http://soundcloud.com/jamesob">jamesob</a>.
-
-      </div>
- 
-      <div class='sep'>
-        <!-- ║▌║█║▌│║▌║▌█ -->
-        <hr />
-       </div>
-      <div id="episodes">
-        <ol class="episode-list">
-          <li>
-            <h2>001</h2>
-            <h3>2015 may 24</h3>
-            download <a href="https://www.dropbox.com/s/1zvi3r7z0cumv13/NITESCHOOL-001.mp3?dl=1">here</a>
-            <ol class="tracklist">
-              <li>Metal Fingers - Plumskinzz</li>
-              <li>Beaumont - Midnight</li>
-              <li>Lee Webster - Detroit Cheeky Things</li>
-              <li>Flunk - Honey's in Love</li>
-              <li>Souls of Mischief - 93 'til infinity</li>
-              <li>Kisses - Up All Night</li>
-              <li>Yo La Tengo - Green Arrow</li>
-              <li>Horace Silver - Lonely Woman</li>
-              <li>Jimpster - "haribo starmix"</li>
-              <li>Rick Wade - Thought Process</li>
-              <li>St. Etienne - Spring</li>
-              <li>Common - The Light</li>
-              <li>Matthew Dear - Soil to Seed</li>
-              <li>Shriekback - My Spine is the Bassline</li>
-              <li>The Sound of Blackness - Optimistic (12" Alright mix)</li>
-              <li>Mark E - Special FX</li>
-              <li>Rescue the Edit - Don't be such a moody mann</li>
-            </ol>
-          </li>
-          
-          <li>
-            <h2>002</h2>
-            <h3>2015 may 31</h3>
-            download <a href="https://www.dropbox.com/s/3w2z9z0p3pvwde7/NITESCHOOL-002.mp3?dl=1">here</a>
-            <ol class="tracklist">
-              <li>Pop & Eye - Spinach Life</li>
-              <li>Nirosta Steel - Foxy Pup</li>
-              <li>Stereolab - Brakhage</li>
-              <li>Les Sins - Bellow</li>
-              <li>Tangerine Dream - Love on a Real Train</li>
-              <li>Nat King Cole, George Shearing - I've Got It Bad (And That Ain't Good)</li>
-              <li>George Fitzgerald - Full Circle (feat. Boxed In)</li>
-              <li>Joy Division - No Love Lost</li>
-              <li>Inner City - Whatcha Gonna Do With My Lovin'</li>
-              <li>Vangelis - Blade Runner Blues</li>
-              <li>The Style Council - The Paris Match (feat. Tracey Thorn)</li>
-              <li>Todd Terje - Swing Star pt. 2</li>
-              <li>Imagination - Music and Lights</li>
-            </ol>
-          </li>
-          
-          <li>
-            <h2>003</h2>
-            <h3>2015 june 6</h3>
-            download <a href="https://soundcloud.com/niteschoolradio/niteschool-003">here</a>
-            <ol class="tracklist">
-              <li>tracklist forthcoming</li>
-            </ol>
-          </li>
-          <li>
-            <h2>004 x <a href="http://soundcloud.com/KevinChristensen-2">KevinChristensen</a>/Jakeyp</h2>
-            <h3>2015 june 13</h3>
-            download <a href="https://www.dropbox.com/s/d3qev9n3cbwukqk/NITESCHOOL-004.mp3?dl=1">here</a>
-            <ol class="tracklist">
-              <li>special guestmixes from Kevin Christensen and Jakeyp</li>
-              <li>tracklist forthcoming</li>
-            </ol>
-          </li>
-          
-        </ol>
-      </div>
-    </div>
-  </body>
-</html>
+  <hr />
+  <div class='rss'>
+    <a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a>
+  </div>
+</div>

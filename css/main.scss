@@ -1,0 +1,83 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// ;
+body {
+    background-color: #aaa;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    font-family: monospace;
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+
+img.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#explanation, .episodes {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.episodes {
+    margin-top: 10px;
+}
+
+ol.episode-list {
+    list-style-type: lower-roman;
+}
+
+.tracklist {
+    margin-top: 20px;
+}
+
+.sep {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul.post-list {
+    list-style-type: none;
+}
+.post-list a {
+    font-size: 80px;
+    color: #bbb;
+}
+
+div.rss {
+    font-size: 80px;
+    margin-top: 30px;
+    float: center;
+}
+
+.post-list .post-meta {
+    margin-left: -200px;
+    font-size: 40px;
+    color: #ddd;
+}
