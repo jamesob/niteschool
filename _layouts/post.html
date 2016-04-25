@@ -5,11 +5,17 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
+
     {% if page.featuring %}
     <h2>feat. {{ page.featuring }}</h2>
     {% endif %}
+
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     <a href="{{ page.download_url }}">download here</a>
+
+    {% if page.soundcloud_url %}
+    <br /><a href="{{ page.soundcloud_url }}">soundcloud here</a>
+    {% endif %}
   </header>
 
   <article class="post-content">
